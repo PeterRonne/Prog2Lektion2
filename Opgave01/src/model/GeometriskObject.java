@@ -15,7 +15,7 @@ public abstract class GeometriskObject {
     }
 
     public void printTilstand() {
-        System.out.println("Jeg er en " + this.getClass().getName() + " med et areal på: " + Math.floor(beregnAreal()) + " Jeg har x-koordinaten: " + getxPosition() + " og y-koordinaten: " + getyPostion());
+        System.out.println("Jeg er en " + this.getClass().getSimpleName().toLowerCase() + " med et areal på: " + Math.floor(beregnAreal()) + " Jeg har x-koordinaten: " + getxPosition() + " og y-koordinaten: " + getyPostion());
     }
 
     public abstract double beregnAreal();
