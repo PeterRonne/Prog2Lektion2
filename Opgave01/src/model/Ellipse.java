@@ -15,4 +15,9 @@ public class Ellipse extends GeometriskObject{
     public double beregnAreal() {
         return Math.PI * r1 * r2;
     }
+
+    @Override
+    public int compareTo(GeometriskObject o) {
+        return super.compareTo(o);
+    }
 }

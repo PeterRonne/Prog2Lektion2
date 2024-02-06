@@ -26,4 +26,9 @@ public class Cirkel extends GeometriskObject implements Resizable {
     public double getRadius() {
         return radius;
     }
+
+    @Override
+    public int compareTo(GeometriskObject o) {
+        return super.compareTo(o);
+    }
 }

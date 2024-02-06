@@ -1,12 +1,18 @@
 import model.*;
 import model.GeometriskObject;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class App {
     public static void main(String[] args) {
         Storage storage = new Storage();
         storage.initStorage();
 
-        for (GeometriskObject geometricObject : storage.getGeometricObjects()) {
+        ArrayList<GeometriskObject> geometriskeObjecter = storage.getGeometricObjects();
+        Collections.sort(geometriskeObjecter);
+
+        for (GeometriskObject geometricObject : geometriskeObjecter) {
             geometricObject.printTilstand();
         }
 

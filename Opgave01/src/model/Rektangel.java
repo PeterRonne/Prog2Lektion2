@@ -14,4 +14,9 @@ public class Rektangel extends GeometriskObject{
     public double beregnAreal() {
         return højde * bredde;
     }
+
+    @Override
+    public int compareTo(GeometriskObject o) {
+        return super.compareTo(o);
+    }
 }

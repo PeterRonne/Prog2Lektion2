@@ -23,4 +23,9 @@ public class Kvadrat extends GeometriskObject implements Resizable {
     public void halve() {
         this.sidelængde = sidelængde / 2;
     }
+
+    @Override
+    public int compareTo(GeometriskObject o) {
+        return super.compareTo(o);
+    }
 }

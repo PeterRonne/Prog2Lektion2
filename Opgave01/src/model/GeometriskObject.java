@@ -1,6 +1,6 @@
 package model;
 
-public abstract class GeometriskObject {
+public abstract class GeometriskObject implements Comparable<GeometriskObject> {
     private int xPosition;
     private int yPostion;
 
@@ -34,5 +34,10 @@ public abstract class GeometriskObject {
 
     public void setyPostion(int yPostion) {
         this.yPostion = yPostion;
+    }
+
+    @Override
+    public int compareTo(GeometriskObject o) {
+        return Double.compare(this.beregnAreal(), o.beregnAreal());
     }
 }
